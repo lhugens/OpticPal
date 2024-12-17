@@ -1,4 +1,4 @@
-package io.codeforall.fanstatics.persistance.model;
+package io.codeforall.fanstatics.opticpal.controller.model;
 
 public enum UserGender {
 

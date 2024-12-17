@@ -1,7 +1,7 @@
-package io.codeforall.fanstatics.services;
+package io.codeforall.fanstatics.opticpal.controller.services;
 
-import io.codeforall.fanstatics.persistance.model.User;
-import io.codeforall.fanstatics.persistance.model.UserType;
+import io.codeforall.fanstatics.opticpal.controller.model.User;
+import io.codeforall.fanstatics.opticpal.controller.model.UserType;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
