@@ -24,6 +24,31 @@ public class MainController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @RequestMapping(method = RequestMethod.POST, path = {"/login"})
+    public ResponseEntity<Void> login(@RequestBody User user){
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path = {"/inneed/start"})
+    public ResponseEntity<Void> inNeedStart(@RequestBody User user){
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path  = {"/volunteer/start"})
+    public ResponseEntity<Void> volunteerStart(@RequestBody User user){
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE, path = {"/{userId}"})
+    public ResponseEntity<Void> removeUser(@RequestParam Integer userId){
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
     @RequestMapping(method = RequestMethod.POST, path= {"/", ""})
     public ResponseEntity<User> match(@RequestBody User user){
 
