@@ -8,6 +8,7 @@ function handleError(message) {
 
 // Valida os campos do formulário
 function validateForm() {
+    const userType = document.getElementById("userType").value.trim();
     const firstName = document.getElementById("firstName").value.trim();
     const lastName = document.getElementById("lastName").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -16,7 +17,7 @@ function validateForm() {
     const gender = document.getElementById("gender").value.trim();
     const age = document.getElementById("age").value.trim();
 
-    if (!firstName || !lastName || !email || !phone || !password || !gender || !age) {
+    if (!firstName || !lastName || !email || !phone || !password || !gender || !age || !userType) {
         throw new Error("Todos os campos são obrigatórios!");
     }
 
@@ -40,7 +41,11 @@ function validateForm() {
         throw new Error("Idade inválida! Apenas dígitos sao permitidos.");
     }
 
-    return { firstName, lastName, email, phone, password, gender, age };
+    if (userType !== "In need" && userType !== "Volunteer") {
+        throw new Error("User type inválido!");
+    }
+
+    return { firstName, lastName, email, phone, password, gender, age, userType };
 }
 
 
