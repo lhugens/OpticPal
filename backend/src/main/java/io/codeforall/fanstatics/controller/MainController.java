@@ -18,6 +18,12 @@ public class MainController {
         this.queueService = queueService;
     }
 
+    @RequestMapping(method = RequestMethod.POST, path = {"/signup"})
+    public ResponseEntity<> signUp(@RequestBody User user){
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @RequestMapping(method = RequestMethod.POST, path= {"/", ""})
     public ResponseEntity<User> match(@RequestBody User user){
 
