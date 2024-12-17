@@ -1,19 +1,18 @@
-package io.codeforall.fanstatics.opticpal.controller.services;
+package io.codeforall.fanstatics.opticpal.services;
 
 import io.codeforall.fanstatics.opticpal.command.UserDto;
-import io.codeforall.fanstatics.opticpal.persistance.model.User;
 import io.codeforall.fanstatics.opticpal.persistance.model.UserType;
 import org.springframework.stereotype.Service;
 
-import java.util.PriorityQueue;
+import java.util.LinkedList;
 import java.util.Queue;
 
 @Service
 public class QueueService {
 
-    private Queue<UserDto> inNeedQueue = new PriorityQueue<>();
+    private Queue<UserDto> inNeedQueue = new LinkedList<>();
 
-    private Queue<UserDto> volunteersQueue = new PriorityQueue<>();
+    private Queue<UserDto> volunteersQueue = new LinkedList<>();
 
     public boolean addUser(UserDto userDto){
         if(userDto.getUserType() == UserType.IN_NEED && !inNeedQueue.contains(userDto)){

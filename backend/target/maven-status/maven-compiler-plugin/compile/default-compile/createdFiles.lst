@@ -1,0 +1,7 @@
+io/codeforall/fanstatics/opticpal/persistance/model/User.class
+io/codeforall/fanstatics/opticpal/converters/UserToUserDto.class
+io/codeforall/fanstatics/opticpal/persistance/model/UserType.class
+io/codeforall/fanstatics/opticpal/command/UserDto.class
+io/codeforall/fanstatics/opticpal/controller/MainController.class
+io/codeforall/fanstatics/opticpal/persistance/model/UserGender.class
+io/codeforall/fanstatics/opticpal/services/QueueService.class

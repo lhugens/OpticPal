@@ -2,7 +2,8 @@ package io.codeforall.fanstatics.opticpal.controller;
 
 import io.codeforall.fanstatics.opticpal.command.UserDto;
 import io.codeforall.fanstatics.opticpal.persistance.model.User;
-import io.codeforall.fanstatics.opticpal.controller.services.QueueService;
+import io.codeforall.fanstatics.opticpal.services.QueueService;
+import io.codeforall.fanstatics.opticpal.services.QueueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
