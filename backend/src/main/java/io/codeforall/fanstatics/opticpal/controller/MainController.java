@@ -1,5 +1,6 @@
 package io.codeforall.fanstatics.opticpal.controller;
 
+import io.codeforall.fanstatics.opticpal.command.UserDto;
 import io.codeforall.fanstatics.opticpal.persistance.model.User;
 import io.codeforall.fanstatics.opticpal.controller.services.QueueService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +32,9 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path  = {"/start"})
-    public ResponseEntity<Void> volunteerStart(@RequestBody User user){
+    public ResponseEntity<Void> userStart(@RequestBody UserDto userDto){
 
-        if(queueService.addUser(user)){
+        if(queueService.addUser(userDto)){
             return new ResponseEntity<>(HttpStatus.OK);
         }
 
@@ -42,9 +43,9 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.DELETE, path = {"/{userId}"})
-    public ResponseEntity<Void> removeUser(@RequestBody User user){
+    public ResponseEntity<Void> removeUser(@RequestBody UserDto userDto){
 
-        if(queueService.removeUser(user)){
+        if(queueService.removeUser(userDto)){
             return new ResponseEntity<>(HttpStatus.OK);
         }
 
@@ -53,11 +54,11 @@ public class MainController {
 
 
     @RequestMapping(method = RequestMethod.POST, path= {"/", ""})
-    public ResponseEntity<User> match(@RequestBody User user){
+    public ResponseEntity<UserDto> match(@RequestBody UserDto userDto){
 
-        queueService.addUser(user);
+        queueService.addUser(userDto);
 
-        User pal = queueService.canMatch(user);
+        UserDto pal = queueService.canMatch(userDto);
 
         if(pal != null){
             return new ResponseEntity<>(pal, HttpStatus.OK);
