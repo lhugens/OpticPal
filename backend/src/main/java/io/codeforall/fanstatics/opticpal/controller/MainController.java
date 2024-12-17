@@ -30,22 +30,25 @@ public class MainController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/inneed/start"})
-    public ResponseEntity<Void> inNeedStart(@RequestBody User user){
-
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
-
-    @RequestMapping(method = RequestMethod.POST, path  = {"/volunteer/start"})
+    @RequestMapping(method = RequestMethod.POST, path  = {"/start"})
     public ResponseEntity<Void> volunteerStart(@RequestBody User user){
 
-        return new ResponseEntity<>(HttpStatus.OK);
+        if(queueService.addUser(user)){
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(HttpStatus.CONFLICT);
+
     }
 
     @RequestMapping(method = RequestMethod.DELETE, path = {"/{userId}"})
-    public ResponseEntity<Void> removeUser(@RequestParam Integer userId){
+    public ResponseEntity<Void> removeUser(@RequestBody User user){
 
-        return new ResponseEntity<>(HttpStatus.OK);
+        if(queueService.removeUser(user)){
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
 

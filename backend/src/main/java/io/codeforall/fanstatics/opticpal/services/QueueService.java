@@ -10,25 +10,40 @@ import java.util.Queue;
 @Service
 public class QueueService {
 
-    private Queue<User> inNeed = new PriorityQueue<>();
+    private Queue<User> inNeedQueue = new PriorityQueue<>();
 
-    private Queue<User> volunteers = new PriorityQueue<>();
+    private Queue<User> volunteersQueue = new PriorityQueue<>();
 
-    public void addUser(User user){
+    public boolean addUser(User user){
+        if(user.getUser_type() == UserType.IN_NEED && !inNeedQueue.contains(user)){
+            inNeedQueue.add(user);
+            return true;
+        }
+        if(user.getUser_type() == UserType.VOLUNTEER && !volunteersQueue.contains(user)){
+            volunteersQueue.add(user);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean removeUser(User user){
         if(user.getUser_type() == UserType.IN_NEED){
-            inNeed.add(user);
+            inNeedQueue.remove(user);
+            return true;
         }
         if(user.getUser_type() == UserType.VOLUNTEER){
-            volunteers.add(user);
+            volunteersQueue.remove(user);
+            return true;
         }
+        return false;
     }
 
     public User canMatch(User user){
-        if(user.getUser_type() == UserType.IN_NEED && !volunteers.isEmpty()){
-            return volunteers.poll();
+        if(user.getUser_type() == UserType.IN_NEED && !volunteersQueue.isEmpty()){
+            return volunteersQueue.poll();
         }
-        if(user.getUser_type() == UserType.VOLUNTEER && !inNeed.isEmpty()){
-            return inNeed.poll();
+        if(user.getUser_type() == UserType.VOLUNTEER && !inNeedQueue.isEmpty()){
+            return inNeedQueue.poll();
         }
         return null;
     }
