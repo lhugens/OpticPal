@@ -1,11 +1,13 @@
 package io.codeforall.fanstatics.opticpal.controller.services;
 
-import io.codeforall.fanstatics.opticpal.controller.model.User;
-import io.codeforall.fanstatics.opticpal.controller.model.UserType;
+import io.codeforall.fanstatics.opticpal.persistance.model.User;
+import io.codeforall.fanstatics.opticpal.persistance.model.UserType;
+import org.springframework.stereotype.Service;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+@Service
 public class QueueService {
 
     private Queue<User> inNeed = new PriorityQueue<>();

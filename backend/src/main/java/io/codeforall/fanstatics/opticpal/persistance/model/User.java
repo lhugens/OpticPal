@@ -1,4 +1,4 @@
-package io.codeforall.fanstatics.opticpal.controller.model;
+package io.codeforall.fanstatics.opticpal.persistance.model;
 
 import javax.persistence.*;
 
