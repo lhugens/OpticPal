@@ -12,13 +12,10 @@ public class QueueService {
 
     private Queue<User> volunteers = new PriorityQueue<>();
 
-    public void addInNeed(User user){
+    public void addUser(User user){
         if(user.getUser_type() == UserType.IN_NEED){
             inNeed.add(user);
         }
-    }
-
-    public void addVolunteer(User user){
         if(user.getUser_type() == UserType.VOLUNTEER){
             volunteers.add(user);
         }
@@ -31,6 +28,7 @@ public class QueueService {
         if(user.getUser_type() == UserType.VOLUNTEER && !inNeed.isEmpty()){
             return inNeed.poll();
         }
+        return null;
     }
 
 }
