@@ -19,7 +19,7 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = {"/signup"})
-    public ResponseEntity<> signUp(@RequestBody User user){
+    public ResponseEntity<Void> signUp(@RequestBody User user){
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
