@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "opticpal_users")
-public class User {
+public class User extends AbstractModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

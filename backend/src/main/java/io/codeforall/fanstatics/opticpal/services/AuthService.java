@@ -1,6 +1,6 @@
 package io.codeforall.fanstatics.opticpal.services;
 
-import io.codeforall.fanstatics.opticpal.persistence.jpa.UserRepository;
+import io.codeforall.fanstatics.opticpal.persistence.dao.jpa.JpaUserDao;
 import io.codeforall.fanstatics.opticpal.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,16 +8,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class AuthService {
 
+    private JpaUserDao jpaUserDao;
+
     @Autowired
-    private UserRepository userRepository;
+    public void setUserRepository(JpaUserDao jpaUserDao) {
+        this.jpaUserDao = jpaUserDao;
+    }
 
     public User signup(User user){
 
-        if(userRepository.existsByEmail(user.getEmail())){
-            throw new IllegalArgumentException("Email is already registered");
-        }
-
-        return userRepository.save(user);
+        return jpaUserDao.saveOrUpdate(user);
     }
 
 }
