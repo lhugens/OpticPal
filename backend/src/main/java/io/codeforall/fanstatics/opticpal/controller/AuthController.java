@@ -38,4 +38,6 @@ public class AuthController {
             return ResponseEntity.badRequest().body("User is already in the database");
         }
     }
+
+
 }
