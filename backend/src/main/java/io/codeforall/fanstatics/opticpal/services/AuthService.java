@@ -22,4 +22,8 @@ public class AuthService {
         return jpaUserDao.saveOrUpdate(user);
     }
 
+    public boolean isUserAlreadySignedUp(String email) {
+        return jpaUserDao.existsByEmail(email);
+    }
+
 }
