@@ -62,6 +62,14 @@ public abstract class GenericJpaDao<T extends Model> implements Dao<T> {
         return em.find(modelType, id);
     }
 
+    @Override
+    public T findByEmail(String email) {
+        String jpql = "SELECT u FROM User u WHERE u.email = :email";
+        return em.createQuery(jpql, modelType)
+                .setParameter("email", email)
+                .getSingleResult();
+    }
+
     /**
      * @see Dao#saveOrUpdate(Model)
      */

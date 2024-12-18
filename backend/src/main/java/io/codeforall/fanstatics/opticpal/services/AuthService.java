@@ -26,4 +26,12 @@ public class AuthService {
         return jpaUserDao.existsByEmail(email);
     }
 
+    public boolean checkEmailAndPassword(String email, String password){
+        return jpaUserDao.existsByEmailAndPassword(email, password);
+    }
+
+    public User getUser(String email){
+        return jpaUserDao.findByEmail(email);
+    }
+
 }

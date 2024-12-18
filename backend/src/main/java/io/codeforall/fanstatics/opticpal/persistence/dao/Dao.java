@@ -25,6 +25,8 @@ public interface Dao<T extends Model> {
      */
     T findById(Integer id);
 
+    T findByEmail(String email);
+
     /**
      * Saves or updates the model
      *
