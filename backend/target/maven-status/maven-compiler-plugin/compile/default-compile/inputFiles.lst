@@ -1,7 +1,11 @@
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/QueueService.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/command/UserDto.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/jpa/UserRepository.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/converters/UserToUserDto.java
-/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistance/model/UserType.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/User.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/UserType.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/MainController.java
-/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistance/model/User.java
-/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistance/model/UserGender.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/AuthController.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/AuthService.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/interceptor/LogRequestsInterceptor.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/UserGender.java

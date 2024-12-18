@@ -1,7 +1,7 @@
 package io.codeforall.fanstatics.opticpal.converters;
 
 import io.codeforall.fanstatics.opticpal.command.UserDto;
-import io.codeforall.fanstatics.opticpal.persistance.model.User;
+import io.codeforall.fanstatics.opticpal.persistence.model.User;
 
 public class UserToUserDto {
 

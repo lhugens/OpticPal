@@ -1,6 +1,6 @@
 package io.codeforall.fanstatics.opticpal.command;
 
-import io.codeforall.fanstatics.opticpal.persistance.model.UserType;
+import io.codeforall.fanstatics.opticpal.persistence.model.UserType;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;

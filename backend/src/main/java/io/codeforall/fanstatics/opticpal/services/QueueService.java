@@ -1,7 +1,7 @@
 package io.codeforall.fanstatics.opticpal.services;
 
 import io.codeforall.fanstatics.opticpal.command.UserDto;
-import io.codeforall.fanstatics.opticpal.persistance.model.UserType;
+import io.codeforall.fanstatics.opticpal.persistence.model.UserType;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
