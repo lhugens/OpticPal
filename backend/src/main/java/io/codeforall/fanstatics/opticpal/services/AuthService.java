@@ -4,6 +4,7 @@ import io.codeforall.fanstatics.opticpal.persistence.dao.jpa.JpaUserDao;
 import io.codeforall.fanstatics.opticpal.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class AuthService {
@@ -15,6 +16,7 @@ public class AuthService {
         this.jpaUserDao = jpaUserDao;
     }
 
+    @Transactional
     public User signup(User user){
 
         return jpaUserDao.saveOrUpdate(user);
