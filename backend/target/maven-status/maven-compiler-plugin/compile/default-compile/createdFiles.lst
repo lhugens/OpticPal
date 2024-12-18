@@ -6,6 +6,7 @@ io/codeforall/fanstatics/opticpal/services/AuthService.class
 io/codeforall/fanstatics/opticpal/persistence/dao/Dao.class
 io/codeforall/fanstatics/opticpal/persistence/model/UserType.class
 io/codeforall/fanstatics/opticpal/command/UserDto.class
+io/codeforall/fanstatics/opticpal/persistence/model/LoginRequest.class
 io/codeforall/fanstatics/opticpal/controller/MainController.class
 io/codeforall/fanstatics/opticpal/persistence/model/Model.class
 io/codeforall/fanstatics/opticpal/persistence/dao/jpa/JpaUserDao.class

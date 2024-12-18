@@ -4,6 +4,7 @@
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/dao/jpa/GenericJpaDao.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/AuthService.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/dao/jpa/JpaUserDao.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/LoginRequest.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/UserGender.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/QueueService.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/converters/UserToUserDto.java
