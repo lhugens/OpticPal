@@ -1,6 +1,8 @@
 package io.codeforall.fanstatics.opticpal.persistence.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,10 +16,13 @@ public class User extends AbstractModel{
     @Enumerated(EnumType.STRING)
     private UserType user_type;
 
+    @JsonProperty("firstName")
     private String firstName;
 
+    @JsonProperty("lastName")
     private String lastName;
 
+    @Column(unique = true)
     private String email;
 
     private String password;
