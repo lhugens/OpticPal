@@ -11733,3 +11733,31 @@ html {
     left: -2vw;
   }
 }
+
+/* button_app.html */
+
+/* Optional: Center the spinner and adjust the text */
+#submitButtonPal {
+  position: relative;
+}
+#loadingSpinner {
+  visibility: hidden; /* Initially hide spinner */
+}
+
+#submitButtonPal.loading #loadingSpinner {
+  visibility: visible; /* Show spinner when loading */
+}
+
+#submitButtonPal.loading #buttonTextPal {
+
+}
+
+#buttonTextPal {
+  visibility: visible;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
