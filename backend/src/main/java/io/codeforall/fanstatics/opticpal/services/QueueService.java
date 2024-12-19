@@ -19,7 +19,7 @@ public class QueueService {
             System.out.println("hellooooooooooooooooooooooooooooooooooo innerd");
             UserDto userDto1 = new UserDto();
             userDto1.setUserType(UserType.VOLUNTEER);
-            userDto1.setPhone("627338263");
+            userDto1.setPhone("917226354");
             userDto1.setFirstName("Leonardo");
             userDto1.setLastName("Hugens");
             volunteersQueue.add(userDto1);
