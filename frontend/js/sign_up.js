@@ -47,38 +47,38 @@ function validateSignUpForm() {
     return customer;
 }
 
-// Função para fazer login do usuário
 async function signUpUser() {
     try {
-        // Obter dados do formulário e validá-los
         const customer = validateSignUpForm();
+        console.log("Sending customer data:", JSON.stringify(customer)); // Debug log
 
-        // Enviar uma requisição para a API de login (ajuste a URL para o seu endpoint de login)
         const response = await fetch("http://127.0.0.1:8080/opticpal/api/auth/signup", {
             method: "POST",
             headers: {
-                'Accept': 'application/json',
+                "Accept": "application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(customer)
         });
 
-        // Verificar se a resposta foi bem-sucedida
         if (!response.ok) {
             const errorBody = await response.json();
-            const errorMessage = errorBody.message || JSON.stringify( "Falha no Sign Up.");
-
+            const errorMessage = errorBody.message || "Falha no Sign Up.";
             throw new Error(errorMessage);
         }
 
-        // Se o login for bem-sucedido, você pode fazer algo (ex: redirecionar o usuário)
-        alert("Sign Up bem sucedido!");
-        // Redirecionar ou armazenar o token, etc.
+        // Store the user data in localStorage for later use
+        localStorage.setItem("user", JSON.stringify(customer));
+
+        console.log("Sign up successful!");
+        window.location.replace("button_app.html");
 
     } catch (error) {
+        console.error("Error during signup:", error); // Debug log
         handleError(error.message);
     }
 }
+
 
 // Adicionar o evento ao botão de login
 document.getElementById("submitButton").addEventListener("click", (e) => {

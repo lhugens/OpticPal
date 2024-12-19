@@ -40,7 +40,10 @@ public class QueueService {
 
     public UserDto canMatch(UserDto userDto){
         if(userDto.getUserType() == UserType.IN_NEED && !volunteersQueue.isEmpty()){
+            System.out.println(userDto);
+            System.out.println(volunteersQueue.peek());
             return volunteersQueue.poll();
+
         }
         if(userDto.getUserType() == UserType.VOLUNTEER && !inNeedQueue.isEmpty()){
             return inNeedQueue.poll();

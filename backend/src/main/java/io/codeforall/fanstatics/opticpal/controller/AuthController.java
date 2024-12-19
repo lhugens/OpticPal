@@ -24,7 +24,6 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<Message> signUp(@Valid @RequestBody User user, BindingResult bindingResult) {
-        System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
         System.out.println(user);
        /* if (bindingResult.hasErrors()) {
             return ResponseEntity.badRequest().body(new Message("Invalid"));
@@ -36,7 +35,7 @@ public class AuthController {
             authService.signup(user);
             return ResponseEntity.ok(new Message("User signed up succefully"));
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body(new Message("User is already in the "));
+            return ResponseEntity.badRequest().body(new Message("User is already in the database"));
         }
     }
 
