@@ -58,7 +58,7 @@ async function fetchPal() {
             lastName: user.lastName,
             phone: user.phone
         };
-        
+
         const response = await fetch("http://127.0.0.1:8080/opticpal/api/user", {
             method: "POST",
             headers: {
@@ -71,6 +71,8 @@ async function fetchPal() {
             throw new Error("Failed to fetch pal.");
         }
         const palData = await response.json();
+        console.log("palFata")
+        console.log(palData)
         return palData; // Assume this contains user info
     } catch (error) {
         console.error("Error fetching pal:", error);

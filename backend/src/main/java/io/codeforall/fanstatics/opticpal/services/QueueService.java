@@ -15,11 +15,13 @@ public class QueueService {
     private Queue<UserDto> volunteersQueue = new LinkedList<>();
 
     public boolean addUser(UserDto userDto){
-        if(userDto.getUserType() == UserType.IN_NEED && !inNeedQueue.contains(userDto)){
+        if(userDto.getUserType().equals(UserType.IN_NEED) && !inNeedQueue.contains(userDto)){
+            System.out.println("hellooooooooooooooooooooooooooooooooooo innerd");
             inNeedQueue.add(userDto);
             return true;
         }
-        if(userDto.getUserType() == UserType.VOLUNTEER && !volunteersQueue.contains(userDto)){
+        if(userDto.getUserType().equals(UserType.VOLUNTEER) && !volunteersQueue.contains(userDto)){
+            System.out.println("hellooooooooooooooooooooooooooooooooooo volunt");
             volunteersQueue.add(userDto);
             return true;
         }
@@ -39,13 +41,13 @@ public class QueueService {
     }
 
     public UserDto canMatch(UserDto userDto){
-        if(userDto.getUserType() == UserType.IN_NEED && !volunteersQueue.isEmpty()){
+        if(userDto.getUserType().equals( UserType.IN_NEED) && !volunteersQueue.isEmpty()){
             System.out.println(userDto);
             System.out.println(volunteersQueue.peek());
             return volunteersQueue.poll();
 
         }
-        if(userDto.getUserType() == UserType.VOLUNTEER && !inNeedQueue.isEmpty()){
+        if(userDto.getUserType().equals(UserType.VOLUNTEER) && !inNeedQueue.isEmpty()){
             return inNeedQueue.poll();
         }
         return null;
