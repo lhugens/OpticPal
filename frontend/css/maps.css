@@ -12,6 +12,15 @@
   }
   
 
+  #button-reload {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin:auto;
+  }
+
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
