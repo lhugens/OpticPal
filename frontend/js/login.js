@@ -39,7 +39,7 @@ async function signInUser() {
         const userCredentials = { email, password };
 
         // Enviar uma requisição para a API de login (ajuste a URL para o seu endpoint de login)
-        const response = await fetch("http://localhost:8080/opticalPal/api/login", {
+        const response = await fetch("http://localhost:8080/opticalPal/api/auth", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(userCredentials),
