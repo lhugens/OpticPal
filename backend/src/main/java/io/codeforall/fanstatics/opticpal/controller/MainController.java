@@ -43,8 +43,6 @@ public class MainController {
     @RequestMapping(method = RequestMethod.POST, path= {"/", ""})
     public ResponseEntity<UserDto> match(@RequestBody UserDto userDto){
 
-        queueService.addUser(userDto);
-
         UserDto pal = queueService.canMatch(userDto);
 
         if(pal != null){
