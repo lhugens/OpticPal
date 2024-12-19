@@ -1,4 +1,5 @@
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/command/UserDto.java
+/Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/Message.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/MainController.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/dao/Dao.java
 /Users/codecadet/Documents/OpticPal/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/dao/jpa/GenericJpaDao.java

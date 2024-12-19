@@ -9,9 +9,9 @@ public class UserToUserDto {
 
         UserDto userDto = new UserDto();
         userDto.setId(user.getId());
-        userDto.setUserType(user.getUser_type());
-        userDto.setFirstName(user.getFirst_name());
-        userDto.setLastName(user.getLast_name());
+        userDto.setUserType(user.getUserType());
+        userDto.setFirstName(user.getFirstName());
+        userDto.setLastName(user.getLastName());
         userDto.setPhone(user.getPhone());
 
         return userDto;
