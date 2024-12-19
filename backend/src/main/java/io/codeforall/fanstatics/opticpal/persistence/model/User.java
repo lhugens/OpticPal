@@ -9,12 +9,8 @@ import javax.persistence.*;
 @Table(name = "opticpal_users")
 public class User extends AbstractModel{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
 
-    @Enumerated(EnumType.STRING)
-    private UserType user_type;
+    private UserType userType;
 
     @JsonProperty("firstName")
     private String firstName;
@@ -29,41 +25,16 @@ public class User extends AbstractModel{
 
     private String phone;
 
-    @Enumerated(EnumType.STRING)
     private UserGender gender;
 
-    private Integer age;
+    private String age;
 
-    public Integer getId() {
-        return id;
+    public UserType getUserType() {
+        return userType;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public UserType getUser_type() {
-        return user_type;
-    }
-
-    public void setUser_type(UserType user_type) {
-        this.user_type = user_type;
-    }
-
-    public String getFirst_name() {
-        return firstName;
-    }
-
-    public void setFirst_name(String first_name) {
-        this.firstName = first_name;
-    }
-
-    public String getLast_name() {
-        return lastName;
-    }
-
-    public void setLast_name(String last_name) {
-        this.lastName = last_name;
+    public void setUserType(UserType userType) {
+        this.userType = userType;
     }
 
     public String getEmail() {
@@ -98,19 +69,35 @@ public class User extends AbstractModel{
         this.gender = gender;
     }
 
-    public Integer getAge() {
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", user_type=" + user_type +
+                "id=" + getId() +
+                ", user_type=" + userType +
                 ", first_name='" + firstName + '\'' +
                 ", last_name='" + lastName + '\'' +
                 ", email='" + email + '\'' +

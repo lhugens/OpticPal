@@ -4,5 +4,5 @@ public enum UserGender {
 
     MALE,
     FEMALE,
-    NON_BINARY
+    OTHER
 }
