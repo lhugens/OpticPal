@@ -11,9 +11,9 @@
     <!-- c3p0 database connection pool management -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost/opticpal_users?useSSL=false"/>
+        <property name="jdbcUrl" value="jdbc:mysql://eyepal-db.cts8osa8krv0.eu-north-1.rds.amazonaws.com:3306/opticpal_users?useSSL=false"/>
         <property name="user" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="qwerty123"/>
 
         <!-- c3p0 database connection pool management properties -->
         <property name="minPoolSize" value="1"/>

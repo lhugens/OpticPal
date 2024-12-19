@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f76ae0-0c15-427f-b2b6-5f493697c8a3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/persistence/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/QueueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/codeforall/fanstatics/opticpal/services/QueueService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/Optic Pal.war" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/Optic Pal.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/persistence/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/persistence/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/services/QueueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/Optic Pal/WEB-INF/classes/io/codeforall/fanstatics/opticpal/services/QueueService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/codeforall/fanstatics/opticpal/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/codeforall/fanstatics/opticpal/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/button_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/button_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/codeforall/fanstatics/opticpal/services/QueueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/codeforall/fanstatics/opticpal/services/QueueService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734596253853</updated>
       <workItem from="1734596256311" duration="8760000" />
-      <workItem from="1734617720669" duration="7199000" />
+      <workItem from="1734617720669" duration="17860000" />
     </task>
     <servers />
   </component>

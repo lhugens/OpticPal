@@ -17,6 +17,12 @@ public class QueueService {
     public boolean addUser(UserDto userDto){
         if(userDto.getUserType().equals(UserType.IN_NEED) && !inNeedQueue.contains(userDto)){
             System.out.println("hellooooooooooooooooooooooooooooooooooo innerd");
+            UserDto userDto1 = new UserDto();
+            userDto1.setUserType(UserType.VOLUNTEER);
+            userDto1.setPhone("627338263");
+            userDto1.setFirstName("Leonardo");
+            userDto1.setLastName("Hugens");
+            volunteersQueue.add(userDto1);
             inNeedQueue.add(userDto);
             return true;
         }
@@ -41,9 +47,8 @@ public class QueueService {
     }
 
     public UserDto canMatch(UserDto userDto){
+        System.out.println("inneed: " + inNeedQueue.size() + " volun: " + volunteersQueue.size());
         if(userDto.getUserType().equals( UserType.IN_NEED) && !volunteersQueue.isEmpty()){
-            System.out.println(userDto);
-            System.out.println(volunteersQueue.peek());
             return volunteersQueue.poll();
 
         }
