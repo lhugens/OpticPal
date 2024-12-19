@@ -43,9 +43,9 @@
             <div class="bg-light rounded-4 py-5 px-4 px-md-5">
                 <div class="text-center mb-5">
                     <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i
-                            class="bi bi-pencil-square"></i></div>
+                            class="bi bi-person-circle"></i></div>
                     <h1 class="fw-bolder">Edit your profile</h1>
-                    <p class="lead fw-normal text-muted mb-0">something</p>
+                    <p class="lead fw-normal text-muted mb-0">update your personal information</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6">
@@ -66,15 +66,15 @@
                                     </div>
                                     <!-- First Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="firstName" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="firstName" type="text" placeholder="Enter your first name..." data-sb-validations="required" />
                                         <label for="firstName">First Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">First name is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="firstName:required">First name is required.</div>
                                     </div>
                                     <!-- Last Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="lastName" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="lastName" type="text" placeholder="Enter your last name..." data-sb-validations="required" />
                                         <label for="lastName">Last Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Last name isrequired.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="lastName:required">Last name isrequired.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
@@ -83,27 +83,29 @@
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                     </div>
-                                    <!-- Password input-->
+
+                                    <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="password" type="password" placeholder="N78#$gh%7j" data-sb-validations="required,password" />
+                                        <input class="form-control" id="password" type="password" placeholder="N78#$gh%7j" data-sb-validations="required" />
                                         <label for="password">Password</label>
                                         <div class="invalid-feedback" data-sb-feedback="password:required">An password is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="password:email">Password is not valid.</div>
                                     </div>
 
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phoneNumber" type="number" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phoneNumber">Phone number</label>
+                                        <input class="form-control" id="phone" type="number" placeholder="961 456 789" data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                     </div>
+
                                     <!-- Age input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="age" type="number" placeholder="18" min="18"
-                                               data-sb-validations="required" />
+                                        <input class="form-control" id="age" type="number" placeholder="20" min="18" data-sb-validations="required" />
                                         <label for="age">Your age</label>
                                         <div class="invalid-feedback" data-sb-feedback="age:required">Age is required.</div>
                                     </div>
+
+                                     <!-- Gender input-->
                                     <div class="form-floating mb-3">
                                         <select class="form-select" id="gender" aria-label="Select your gender"  data-sb-validations="required" >
                                             <label for="gender">Gender</label>
@@ -115,6 +117,7 @@
                                         <label for="gender">Select gender</label>
                                         <div class="invalid-feedback" data-sb-feedback="gender:required">Gender is required.</div>
                                     </div>
+
                                     <!-- Submit success message-->
                                     <!---->
                                     <!-- This is what your users will see when the form-->
@@ -127,6 +130,7 @@
                                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                         </div>
                                     </div>
+
                                     <!-- Submit error message-->
                                     <!---->
                                     <!-- This is what your users will see when there is-->
