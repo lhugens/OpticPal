@@ -18,7 +18,7 @@ async function addToQueue() {
             phone: user.phone
         };
 
-        const response = await fetch("http://127.0.0.1:8080/opticpal/api/user/start", {
+        const response = await fetch(`${window.location.origin}/opticpal/api/user/start`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",
@@ -54,7 +54,7 @@ async function fetchPal() {
             phone: user.phone
         };
 
-        const response = await fetch("http://127.0.0.1:8080/opticpal/api/user", {
+        const response = await fetch(`${window.location.origin}/opticpal/api/user`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",

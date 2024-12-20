@@ -52,7 +52,7 @@ async function signUpUser() {
         const customer = validateSignUpForm();
         console.log("Sending customer data:", JSON.stringify(customer)); // Debug log
 
-        const response = await fetch("http://127.0.0.1:8080/opticpal/api/auth/signup", {
+        const response = await fetch(`http://ec2-13-50-4-45.eu-north-1.compute.amazonaws.com/api/auth/signup`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",
